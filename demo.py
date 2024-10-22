@@ -10,10 +10,9 @@
 # Created on:   21 October, 2024
 # 
 # Link to presentation:
-# <placeholder link>
+# https://tinyurl.com/pyqt-demo
 #------------------------------------------------------------------
 
-import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QLineEdit, QSlider
 from PyQt5.QtCore import Qt
 

@@ -5,6 +5,8 @@
 This is a short demo showcasing how easily you can put together a GUI for
 python utilizing PyQt5, a binding for the Qt framework in python.
 
+[Link to the lightning talk ppt](https://tinyurl.com/pyqt-demo)
+
 ## How to use it
 1. Clone the repository
 ```
