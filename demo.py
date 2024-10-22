@@ -29,12 +29,6 @@ def change_background_color():
     color_value = f'rgb({r}, {g}, {b})'
     window.setStyleSheet(f"background-color: {color_value};")
 
-# Function to reset sliders to white background
-def reset_sliders():
-    slider_r.setValue(255)
-    slider_g.setValue(255)
-    slider_b.setValue(255)
-
 # Helper function to create a slider
 def create_slider(y_position, default_value, on_change_callback):
     slider = QSlider(Qt.Horizontal, window)
@@ -104,17 +98,6 @@ window.setGeometry(200, 200, 400, 450)
 # slider_r = create_slider(200, 255, change_background_color)  # Red slider
 # slider_g = create_slider(250, 255, change_background_color)  # Green slider
 # slider_b = create_slider(300, 255, change_background_color)  # Blue slider
-#
-#------------------------------------------------------------------
-
-
-#------------------------------------------------------------------
-# Create a reset button to reset the sliders back to white background
-#------------------------------------------------------------------
-#
-# reset_button = QPushButton('Reset to White', window)
-# reset_button.setGeometry(150, 350, 100, 30)
-# reset_button.clicked.connect(reset_sliders)
 #
 #------------------------------------------------------------------
 
