@@ -21,14 +21,6 @@ def update_label():
     text = text_field.text()
     label.setText(text)
 
-# Function to change the background color based on RGB slider values
-def change_background_color():
-    r = slider_r.value()
-    g = slider_g.value()
-    b = slider_b.value()
-    color_value = f'rgb({r}, {g}, {b})'
-    window.setStyleSheet(f"background-color: {color_value};")
-
 # Helper function to create a slider
 def create_slider(y_position, default_value, on_change_callback):
     slider = QSlider(Qt.Horizontal, window)
@@ -38,6 +30,14 @@ def create_slider(y_position, default_value, on_change_callback):
     slider.setValue(default_value)
     slider.valueChanged.connect(on_change_callback)
     return slider
+
+# Function to change the background color based on RGB slider values
+def change_background_color():
+    r = slider_r.value()
+    g = slider_g.value()
+    b = slider_b.value()
+    color_value = f'rgb({r}, {g}, {b})'
+    window.setStyleSheet(f"background-color: {color_value};")
 
 # Create the application
 app = QApplication([])
@@ -105,8 +105,8 @@ window.setGeometry(200, 200, 400, 450)
 #------------------------------------------------------------------
 # Code to execute the gui
 #------------------------------------------------------------------
-# Set initial background color to white
-window.setStyleSheet("background-color: rgb(255, 255, 255);")
+# Set initial background color to gray
+window.setStyleSheet("background-color: rgb(150, 150, 150);")
 window.show()
 
 # Run the application event loop
